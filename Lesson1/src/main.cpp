@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Testing 123..." << std::endl;
+    std::cout << "Hello World!" << std::endl;
 
     for (int i = 0; i < argc; ++i)
     {
@@ -10,5 +10,6 @@ int main(int argc, char* argv[])
     }
 
     system("PAUSE");
+
     return 0;
 }

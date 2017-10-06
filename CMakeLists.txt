@@ -1,9 +1,5 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.9.0)
 
-project(hello-cmake)
+project(LearningCMake)
 
-add_executable(hello src/main.cpp)
-
-add_subdirectory(tests)
-
-install(TARGETS hello DESTINATION hello/bin)
+add_subdirectory(Lesson1)
