@@ -16,3 +16,13 @@ target_include_directories( GameLib
     PUBLIC inc
 )
 
+if ( BUILD_SHARED_LIBS )
+    set_target_properties( GameLib
+        PROPERTIES
+            DEFINE_SYMBOL GAME_EXPORTS
+    )
+
+    target_compile_definitions( GameLib 
+        INTERFACE GAME_IMPORTS
+    )
+endif( BUILD_SHARED_LIBS )
