@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12.0)
+cmake_minimum_required(VERSION 3.13.0)
 
 # Use solution folders.
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)

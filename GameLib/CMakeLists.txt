@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12.0)
+cmake_minimum_required(VERSION 3.13.0)
 
 project( GameLib LANGUAGES CXX )
 
@@ -11,4 +11,8 @@ set( SOURCE_FILES
 )
 
 add_library( GameLib ${HEADER_FILES} ${SOURCE_FILES} )
+
+target_include_directories( GameLib
+    PUBLIC inc
+)
 
