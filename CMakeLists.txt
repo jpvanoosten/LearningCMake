@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.13.0)
+cmake_minimum_required(VERSION 3.12.0)
 
 # Specify configurable options
-option( BUILD_SHARED_LIBS "Build shared libs?" ON )
+option( BUILD_SHARED_LIBS "Build shared libs?" OFF )
 
 # Make sure DLL and EXE targets go to the same directory.
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib) # Output directory for static lib (.LIB)
